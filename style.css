@@ -4,10 +4,36 @@ body {
 
 .header,
 .content,
-.main-image-div {
+.main-image-div,
+.footer {
   font-family: "Hero New";
   display: flex;
   background: #1f2937;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  height: 400px;
+  font-family: "Hero New";
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 64px;
+  text-align: center;
+}
+
+.container {
+  font-family: "Hero New";
+  display: flex;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  gap: 32px;
+  margin: 8px;
 }
 
 .header {
@@ -25,12 +51,30 @@ body {
   padding: 4px 32px 32px;
 }
 
-.content-text {
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+}
+
+.container-info {
+  display: flex;
   flex-direction: column;
-  padding: 4px;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
+  max-width: 240px;
+  padding: 16px;
+}
+
+.container-title {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.info-text {
+  text-align: center;
 }
 
 .main-image-div {
@@ -50,6 +94,10 @@ a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+}
+
+a:hover {
+  color: #3882f6;
 }
 
 img {
@@ -90,4 +138,65 @@ button {
   font-weight: bold;
   padding: 4px;
   margin: 32px 0;
+}
+
+.CTA {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  color: white;
+}
+
+.CTA-container {
+  display: flex;
+  background-color: #3882f6;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 8px;
+}
+
+.CTA-container-text {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.CTA-header {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+button {
+  padding: 8px 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: white;
+  color: #3882f6;
+}
+
+.CTA-button {
+  margin: 32px;
+}
+
+.footer,
+.footer-credits {
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-text {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 4px;
+  flex: 1;
 }
